@@ -8,7 +8,7 @@ This project generates a reproducible synthetic transaction dataset for research
 - Density target: about `50 transactions per adult per month`
 
 ## Data Source and Provenance
-- Source workbook (local): `/Users/arvimahe/Downloads/reference-person-age-ranges-2024.xlsx`
+- Source workbook (local): `reference-person-age-ranges-2024.xlsx`
 - Original BLS file URL: <https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/reference-person-age-ranges-2024.xlsx>
 - BLS table index page: <https://www.bls.gov/cex/tables.htm>
 - BLS article motivating dense transaction behavior (~50/month context): <https://www.bls.gov/opub/btn/volume-4/consumer-expenditures-vary-by-age.htm>
@@ -41,16 +41,16 @@ Ignored:
 8. Sample transaction categories with probability proportional to BLS category annual means.
 
 ## Reproducible Command
-Run from `/Users/arvimahe/Documents/gtech_2767_data_generation`:
+Run from `cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation`:
 
 ```bash
-python3 /Users/arvimahe/Documents/gtech_2767_data_generation/generate_65plus_simulated_data.py \
-  --source /Users/arvimahe/Downloads/reference-person-age-ranges-2024.xlsx \
+python3 cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation/generate_65plus_simulated_data.py \
+  --source cs6727/syntheticdata/data_without_fraudulent_transactions/reference-person-age-ranges-2024.xlsx \
   --adults 10 \
   --year 2024 \
   --seed 20260306 \
-  --output-csv /Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.csv \
-  --output-metadata /Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.metadata.json
+  --output-csv cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.csv \
+  --output-metadata cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.metadata.json
 ```
 
 ## Fixed Reproducibility Parameters
@@ -61,9 +61,9 @@ python3 /Users/arvimahe/Documents/gtech_2767_data_generation/generate_65plus_sim
 - Adult-month pairs: `120` (`10 adults * 12 months`)
 
 ## Output Artifacts
-- Generator script: `/Users/arvimahe/Documents/gtech_2767_data_generation/generate_65plus_simulated_data.py`
-- Dataset CSV: `/Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.csv`
-- Metadata JSON: `/Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.metadata.json`
+- Generator script: `cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation/generate_65plus_simulated_data.py`
+- Dataset CSV: `cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.csv`
+- Metadata JSON: `cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.metadata.json`
 
 ## Output Summary (Current Reproducible Run)
 - Total rows (transactions): `5997`
@@ -94,17 +94,11 @@ Verify hashes:
 
 ```bash
 shasum -a 256 \
-  /Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.csv \
-  /Users/arvimahe/Documents/gtech_2767_data_generation/simulated_spending_65plus_10adults_2024.metadata.json \
-  /Users/arvimahe/Documents/gtech_2767_data_generation/generate_65plus_simulated_data.py
+  cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.csv \
+  cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.metadata.json \
+  cs6727/syntheticdata/data_without_fraudulent_transactions/generate_65plus_simulated_data.py
 ```
 
-## Runtime Environment (Generation Session)
-- UTC timestamp: `2026-03-06T07:06:09Z`
-- OS: `Darwin 25.3.0 arm64`
-- Python: `3.11.5`
-- Working directory:
-  `/Users/arvimahe/Documents/gtech_2767_data_generation`
 
 ## Model and Tooling Provenance
 - Generation script and artifacts were produced in OpenAI Codex desktop.
