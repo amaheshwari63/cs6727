@@ -1,0 +1,95 @@
+{
+  "source_workbook": "/Users/arvimahe/Downloads/reference-person-age-ranges-2024.xlsx",
+  "table_title": "Table 1300. Age of reference person: Annual expenditure means, shares, standard errors, and relative standard errors, Consumer Expenditure Surveys, 2024",
+  "seed": 20260306,
+  "year": 2024,
+  "age_groups_used": [
+    "65 years and older",
+    "65-74 years",
+    "75 years and older"
+  ],
+  "assumptions": [
+    "Only age-based columns were used (65 years and older, 65-74 years, 75 years and older).",
+    "Annual budget per synthetic adult was sampled around BLS age-group annual mean using a bounded lognormal multiplier.",
+    "Annual budget was distributed uniformly across 12 months for each adult.",
+    "Transactions per month were generated in the 48-52 range (about 50).",
+    "Transaction categories were sampled proportionally to annual category means from the workbook."
+  ],
+  "annual_mean_expenditure_by_age_group": {
+    "65 years and older": 61432.0,
+    "65-74 years": 65354.0,
+    "75 years and older": 55834.0
+  },
+  "category_count_by_age_group": {
+    "65 years and older": 111,
+    "65-74 years": 111,
+    "75 years and older": 111
+  },
+  "simulation_summary": {
+    "row_count": 5997,
+    "total_amount_usd": 627854.04,
+    "adults": [
+      {
+        "adult_id": "A01",
+        "age_group": "65-74 years",
+        "age_years": 67,
+        "annual_budget": 66530.9
+      },
+      {
+        "adult_id": "A02",
+        "age_group": "65 years and older",
+        "age_years": 89,
+        "annual_budget": 50332.44
+      },
+      {
+        "adult_id": "A03",
+        "age_group": "65 years and older",
+        "age_years": 89,
+        "annual_budget": 78901.36
+      },
+      {
+        "adult_id": "A04",
+        "age_group": "65 years and older",
+        "age_years": 84,
+        "annual_budget": 46566.23
+      },
+      {
+        "adult_id": "A05",
+        "age_group": "65 years and older",
+        "age_years": 73,
+        "annual_budget": 63471.13
+      },
+      {
+        "adult_id": "A06",
+        "age_group": "65-74 years",
+        "age_years": 69,
+        "annual_budget": 81083.87
+      },
+      {
+        "adult_id": "A07",
+        "age_group": "65-74 years",
+        "age_years": 74,
+        "annual_budget": 66376.09
+      },
+      {
+        "adult_id": "A08",
+        "age_group": "75 years and older",
+        "age_years": 83,
+        "annual_budget": 52772.32
+      },
+      {
+        "adult_id": "A09",
+        "age_group": "75 years and older",
+        "age_years": 92,
+        "annual_budget": 68072.08
+      },
+      {
+        "adult_id": "A10",
+        "age_group": "75 years and older",
+        "age_years": 89,
+        "annual_budget": 53747.8
+      }
+    ],
+    "seed": 20260306
+  }
+}
