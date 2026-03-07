@@ -44,7 +44,7 @@ Ignored:
 Run from `cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation`:
 
 ```bash
-python3 cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation/generate_65plus_simulated_data.py \
+python3 cs6727/syntheticdata/data_without_fraudulent_transactions/generate_65plus_simulated_data.py \
   --source cs6727/syntheticdata/data_without_fraudulent_transactions/reference-person-age-ranges-2024.xlsx \
   --adults 10 \
   --year 2024 \
