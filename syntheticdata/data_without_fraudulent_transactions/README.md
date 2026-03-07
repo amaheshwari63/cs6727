@@ -41,7 +41,7 @@ Ignored:
 8. Sample transaction categories with probability proportional to BLS category annual means.
 
 ## Reproducible Command
-Run from `cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation`:
+Run from `cs6727/syntheticdata/data_without_fraudulent_transactions`:
 
 ```bash
 python3 cs6727/syntheticdata/data_without_fraudulent_transactions/generate_65plus_simulated_data.py \
@@ -61,7 +61,7 @@ python3 cs6727/syntheticdata/data_without_fraudulent_transactions/generate_65plu
 - Adult-month pairs: `120` (`10 adults * 12 months`)
 
 ## Output Artifacts
-- Generator script: `cs6727/syntheticdata/data_without_fraudulent_transactions/gtech_2767_data_generation/generate_65plus_simulated_data.py`
+- Generator script: `cs6727/syntheticdata/data_without_fraudulent_transactions/generate_65plus_simulated_data.py`
 - Dataset CSV: `cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.csv`
 - Metadata JSON: `cs6727/syntheticdata/data_without_fraudulent_transactions/simulated_spending_65plus_10adults_2024.metadata.json`
 
