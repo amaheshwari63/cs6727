@@ -1,0 +1,110 @@
+{
+  "seed": 6727,
+  "source_xlsx": "/Users/arvimahe/Downloads/reference-person-age-ranges-2024.xlsx",
+  "output_dir": "data",
+  "source_age_columns": {
+    "H": "65 years and older",
+    "I": "65-74 years",
+    "J": "75 years and older"
+  },
+  "dataset_files": {
+    "cs6727_DS1": {
+      "path": "data/cs6727_DS1.csv",
+      "sha256": "9d8e32665619f289664272e5a3ad8ce75263f6434f5ee4292f24640620f200f9",
+      "rows": 90000,
+      "users": 100,
+      "months_per_user": 18,
+      "transactions_per_user_month": 50,
+      "scam_rows": 2700,
+      "normal_rows": 87300,
+      "month_state_counts": {
+        "normal": 87300,
+        "scam": 2700
+      },
+      "scenario": {
+        "non_scam_users_18m": 80,
+        "scam_users_first12_normal_last6_scam": 20
+      }
+    },
+    "cs6727_DS2": {
+      "path": "data/cs6727_DS2.csv",
+      "sha256": "2344487f3a56763e023a135be4a7dbcf3cbba6efa7336b035c1645900d3dc2e2",
+      "rows": 90000,
+      "users": 100,
+      "months_per_user": 18,
+      "transactions_per_user_month": 50,
+      "scam_rows": 12300,
+      "normal_rows": 77700,
+      "month_state_counts": {
+        "normal": 77700,
+        "scam": 12300
+      },
+      "scenario": {
+        "non_scam_users_18m": 80,
+        "scam_users_18m": 20
+      }
+    }
+  },
+  "profiles": {
+    "H": {
+      "age_group": "65 years and older",
+      "annual_total": 61432.0,
+      "top_level_categories": {
+        "Food": 7940.0,
+        "Alcoholic beverages": 532.0,
+        "Housing": 22193.0,
+        "Apparel and services": 1198.0,
+        "Transportation": 9538.0,
+        "Healthcare": 7799.0,
+        "Entertainment": 3025.0,
+        "Personal care products and services": 782.0,
+        "Reading": 120.0,
+        "Education": 429.0,
+        "Tobacco products and smoking supplies": 266.0,
+        "Miscellaneous": 972.0,
+        "Cash contributions": 3158.0,
+        "Personal insurance and pensions": 3480.0
+      }
+    },
+    "I": {
+      "age_group": "65-74 years",
+      "annual_total": 65354.0,
+      "top_level_categories": {
+        "Food": 8483.0,
+        "Alcoholic beverages": 610.0,
+        "Housing": 22329.0,
+        "Apparel and services": 1377.0,
+        "Transportation": 11414.0,
+        "Healthcare": 7715.0,
+        "Entertainment": 3122.0,
+        "Personal care products and services": 817.0,
+        "Reading": 117.0,
+        "Education": 482.0,
+        "Tobacco products and smoking supplies": 320.0,
+        "Miscellaneous": 1067.0,
+        "Cash contributions": 2921.0,
+        "Personal insurance and pensions": 4579.0
+      }
+    },
+    "J": {
+      "age_group": "75 years and older",
+      "annual_total": 55834.0,
+      "top_level_categories": {
+        "Food": 7168.0,
+        "Alcoholic beverages": 422.0,
+        "Housing": 21999.0,
+        "Apparel and services": 942.0,
+        "Transportation": 6855.0,
+        "Healthcare": 7918.0,
+        "Entertainment": 2888.0,
+        "Personal care products and services": 734.0,
+        "Reading": 124.0,
+        "Education": 354.0,
+        "Tobacco products and smoking supplies": 188.0,
+        "Miscellaneous": 837.0,
+        "Cash contributions": 3497.0,
+        "Personal insurance and pensions": 1908.0
+      }
+    }
+  }
+}
